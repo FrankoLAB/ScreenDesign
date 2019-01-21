@@ -1,0 +1,118 @@
+@font-face {
+	font-family: "MyriadPro";
+	src: url(fonts/MyriadPro.ttf);
+}
+@font-face {
+	font-family: "MyriadProCond";
+	src: url(fonts/MyriadProCond.otf);
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url(fonts/Quicksand.otf);
+}
+@font-face {
+	font-family: "Rokkitt";
+	src: url(fonts/Rokkitt.ttf);
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	font-family: "MyriadPro";
+}
+a {
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+header {
+	width: 100%;
+	min-height: 500px;
+	background: url(img/header-bg-2.png) center no-repeat;
+	overflow: visible;
+}
+.header-nav {
+	margin: 0 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 58px;
+}
+.nav-logo {
+	color: #ffffff;
+	font-family: "MyriadProCond";
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	width: 304px;
+}
+.menu-link {
+	color: #ffffff;
+	font-family: "MyriadProCond";
+	font-size: 19px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	transition: 0.5s;
+}
+.active {
+	text-decoration: underline;
+}
+.menu-link:hover {
+	color: #1abc9c;
+	transition: 0.5s;
+}
+.header-title {
+	margin-top: 153px;
+	margin-bottom: 0px;
+	text-align: center;
+	color: #ffffff;
+	font-family: Rokkitt;
+	font-size: 60px;
+	font-weight: 400;
+	letter-spacing: -0.63px;
+}
+.line {
+	height: 1px;
+	width: 614px;
+	background: #fff;
+	display: block;
+	margin: 13px auto 20px auto;
+}
+.header-subtitle {
+	margin-top: 0;
+	text-align: center;
+	color: #ffffff;
+	font-family: Quicksand;
+	font-size: 22px;
+	font-weight: 400;
+	letter-spacing: -0.35px;
+}
+.header-button {
+	display: block;
+	margin: 140px auto -25px auto;
+	width: 218px;
+	height: 56px;
+	background-color: #1abc9c;
+	color: #ffffff;
+	font-family: Rokkitt;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -0.38px;
+	line-height: 56px;
+	text-align: center;
+	transition: 0.5s;
+}
+.header-button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(50,50,50,0.5);
+	transition: 0.5s;
+}
