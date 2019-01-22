@@ -204,7 +204,75 @@ header {
 }
 .image {
 	width: 400px;
-	height: 284px;	
+	height: 284px;
+	position: relative;
+}
+.image:before {
+	content: "\f002";
+	font-family: FontAwesome;
+	color: #fff;
+	background: #1abc9c;
+	padding: 20px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	opacity: 0;
+	transition: 0.5s;
+}
+.image:after {
+	content: "";
+	background: rgba(17, 187, 153, 0.5);
+	position: absolute;
+	bottom: 90px;
+	width: 100%;
+	height: 180px;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 0.1s;
+}
+.hover-title {
+	position: absolute;
+	bottom: 0;
+	background: #1abc9c;
+	width: 100%;
+	height: 90px;
+	opacity: 0;
+	transition: 0.8s;
+}
+.hover-title h4 {
+	color: #ffffff;
+	font-family: Rokkitt;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: -0.48px;
+	margin: 20px auto auto 20px;
+}
+.hover-title p {
+	color: #297465;
+	font-family: "MyriadPro";
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: -0.24px;
+	margin: 9px auto auto 20px;
+}
+.image:hover:before {
+	opacity: 1;
+	transition: 0.5s;
+	transition-delay: 0.2s;
+}
+.image:hover:after {
+	opacity: 1;
+	height: 6px;
+	transition: 0.5s;
+}
+.image:hover .hover-title {
+	opacity: 1;
+	transition: 0.5s;
+	transition-delay: 0.1s;
+}
+.image:hover .inner {
+	background: rgba(238, 187, 187, 0);
+	transition: 0.5s;
 }
 .image-1 {
 	background: url(img/portfolio-1.png) no-repeat center;
@@ -217,6 +285,12 @@ header {
 }
 .image-4 {
 	background: url(img/portfolio-4.png) no-repeat center;
+}
+.inner {
+	background: rgba(238, 187, 187, 0.5);
+	width: 100%;
+	height: 100%;	
+	transition: 0.8s;
 }
 .portfolio-button {
 	display: block;
@@ -232,6 +306,12 @@ header {
 	letter-spacing: -0.38px;
 	text-align: center;
 	line-height: 65px;
+	transition: 0.5s;
+}
+.portfolio-button:hover {
+	width: 80%;
+	transition: 0.5s;
+	background: #e0b7b5;
 }
 .fa-arrow-right {
 	margin-left: 10px;
@@ -252,6 +332,30 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+}
+.name, .email, .contact-area {
+	transition: 0.5s;
+}
+.contact-form:hover .name {
+	transform: 
+		translate(-30px, -15px)
+		scale(1.05);
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	transition: 0.5s;
+}
+.contact-form:hover .email {
+	transform: 
+		translate(30px, -15px)
+		scale(1.05);
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	transition: 0.5s;
+}
+.contact-form:hover .contact-area {
+	transform: 
+		translateY(20px)
+		scale(1.1);
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	transition: 0.5s;
 }
 .inputs {
 	width: 100%;
@@ -306,15 +410,28 @@ footer {
 	width: 100px;
 	border: 5px solid #75d4c1;
 	background: #f6f6f6;
+	transition: 0.5s;
 }
 .social i {
 	color: #1abc9c;
 	display: flex;
 	justify-content: center;
 	line-height: 100px;
+	transition: 0.5s;
+}
+.social:hover {
+	border-radius: 50%;
+	border: 5px solid #e0b7b5;
+	transform: rotate(360deg);
+	transition: 0.5s;
+}
+.social:hover .soc {
+	transform: rotate(-360deg);
+	transition: 0.5s;
+	color: #e0b7b5;
 }
 .fa-twitter {
-	font-size: 50px;
+	font-size: 40px;
 }
 .fa-dribbble {
 	font-size: 40px;
