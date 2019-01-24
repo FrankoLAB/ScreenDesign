@@ -27,6 +27,14 @@
         transform: rotateY(-360deg);
     } 
 }
+@keyframes sizeh { 
+    from { 
+        transform: scaleY(0);
+    } 
+    to { 
+        transform: scaleY(1);
+    } 
+}
 
 body {
 	max-width: 1200px;
@@ -92,6 +100,7 @@ header {
 	font-size: 60px;
 	font-weight: 400;
 	letter-spacing: -0.63px;
+	animation: sizeh ease-in-out 2s;
 }
 .line {
 	height: 1px;
@@ -437,11 +446,13 @@ header {
 	text-align: center;
 	line-height: 65px;
 	transition: 0.5s;
+	transition-delay: 0.2s;
 }
 .contact-form:hover .contact-button {
 	height: 57px;
 	transform: translateY(70px);
 	transition: 0.5s;
+	
 }
 footer {
 	width: 100%;

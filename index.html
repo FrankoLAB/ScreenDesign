@@ -105,11 +105,14 @@
 	<section class="contact">
 		<h2 class="contact-title">Get in touch!</h2>
 		<form action="#" class="contact-form">
+			<input type="hidden" name="Project name" value="screendesign">
+			<input type="hidden" name="admin_email" value="write_me.88@mail.ru">
+			<input type="hidden" name="form_subject" value="заявка">
 			<div class="inputs">
-				<input type="text" class="name" value="Name">
-				<input type="email" class="email" value="Email">
+				<input type="text" class="name" name="name" placeholder="Name">
+				<input type="email" class="email" name="email" placeholder="Email">
 			</div>
-			<textarea class="contact-area" name="help" id="help" cols="30" rows="10">How can I help you?</textarea>
+			<textarea class="contact-area" name="help" cols="30" rows="10" placeholder="How can I help you?"></textarea>
 			<a class="contact-button">SEND</a>
 		</form>
 
@@ -126,5 +129,7 @@
 			<p class="label">Imprint</p>
 		</div>	
 	</footer>
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 </body>
 </html>
